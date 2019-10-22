@@ -1,0 +1,56 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{fourier}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Maria de Lourdes Gomez}
+
+\begin{document}
+\begin{center}
+\textbf{REPORTE DE TAREA}\\
+.\\
+DISENO DE UNA MODULACION DE ANCHO DE PULSO (PWM) AMP.OP CON TRASISTORES\\
+.
+\end{center}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=14cm]{upzmg.png} 
+\end{figure}
+
+\begin{center}
+Maria de Lourdes Gomez Islas\\
+.\\
+22-OCT-2019\\
+.\\
+Universidad Politecnica de La Zona Metropolitana de Guadalajara
+\end{center}
+
+\newpage 
+
+\part{Teorico}
+
+Los circuitos de conversion DC/AC tienen amplia aplicacion en la industria.  Son  utilizados  en  varia-dores de velocidad, sistemas de ali-mentacion  ininterrumpida,  filtrosactivos,  etc.\\
+Los  conversores  DC/AC  se  clasifican  como  inversores con fuente de voltaje (VSI) e inver-sores  con  fuente  de  corriente(CSI).\\
+1 ,2 Los CSI se usan en siste-mas de alta potencia, los VSI se re-servan para aplicaciones en baja y mediana  potencia.  Dentro  de  estaclasificacion existen varias configu-raciones de conversores DC/AC quedependen de la aplicacion final y el nivel  de  voltaje  o  corriente  de  su salida.\\
+En el caso de los drive para motores  de  baja  y  mediana  poten-cia, la topologia tipica es el medio puente inversor trifasico con fuentede voltaje , formado por seis  elementos  de  conmutacion Mosfets, Transistores Bipolares de Compuerta Aislada (IGBT), Tiris-tores  desactivados  por  Compuerta(GTO) o Tiristores Controlados porMOS (MCT).
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=16cm]{HTML/QWER.png}  
+\caption{Medio puente inversor trifasico con circuito intermedio de DC.}
+\end{figure}
+
+\part{Tecnicas de modulacion escalares o PWM}
+
+Se usa en inversores  DC/AC monofasicos y trifasicos.\\
+Se basanen la comparacion de una senal dereferencia  a  modular  y  una  senalportadora  de  forma  triangular  odiente de sierra ; la com-paracion generará un tren de pulsos de ancho espesifico que se utilizanen la conmutacion del puente inver-sor.\\
+La relacion entre la amplitud dela senal portadora y la senal de re-ferencia se llama \emph{índice de modu-lacion} y  se  representa  por  ,  donde  Ar  es  la  amplitud  de  la senal de referencia y Ac es la am-plitud de la senal portadora.\\
+El indice  de  modulacion  permite  obtener tension variable a la salida delinversor.\\
+La relacion entre la frecuencia dela senal portadora y la frecuencia de referencia  se  denomina  \emph{indice  defrecuencia}.
+
+\end{document}

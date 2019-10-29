@@ -1,0 +1,69 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{fourier}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Maria de Lourdes Gomez}
+
+\begin{document}
+\begin{center}
+\textbf{REPORTE DE TAREA}\\
+.\\
+CALCULAR LOS PARAMETROS DE CIRCUITOS DE ACTIVACION DE TRANSISTORES DE POTENCIA\\
+.
+\end{center}
+
+\begin{center}
+Maria de Lourdes Gomez Islas\\
+.\\
+29-OCT-2019\\
+.\\
+Universidad Politecnica de La Zona Metropolitana de Guadalajara
+\end{center}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=14cm]{upzmg.png} 
+\end{figure}
+
+\newpage 
+
+\part{que es un transistor de potencia}
+
+El funcionamiento y utilizacion de los transistores de potencia es identico al de los transistores normales, teniendo como caracteristicas especiales las altas tensiones e intensidades que tienen que soportar y, por tanto, las altas potencias a disipar.\\
+Existen tres tipos de transistores de potencia:\\
+
+\begin{itemize}
+\item bipolar.
+\item unipolar o FET (Transistor de Efecto de Campo).
+\item IGBT.
+\end{itemize}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=9cm]{HTML/TAREAPOTENCIATRANSISTOR.png} 
+\caption{Parametros}
+\end{figure}
+
+El IGBT ofrece a los usuarios las ventajas de entrada MOS, más la capacidad de carga en corriente de los transistores bipolares:\\
+\begin{itemize}
+\item Trabaja con tension. 
+\item Tiempos de conmutacion bajos. 
+\item Disipacion mucho mayor (como los bipolares).
+\end{itemize}\\
+Nos interesa que el transistor se parezca, lo mas posible, a un elemento ideal:\\
+\begin{itemize}
+\item Pequenas fugas. 
+\item Alta potencia.
+\item Bajos tiempos de respuesta (ton , toff), para conseguir una alta frecuencia de funcionamiento. 
+\item Alta concentracion de intensidad por unidad de superficie del semiconductor. 
+\item Que el efecto avalancha se produzca a un valor elevado ( VCE maxima elevada). 
+\item Que no se produzcan puntos calientes (grandes di.dt ).
+\end{itemize}\\
+Una limitacion importante de todos los dispositivos de potencia y concretamente de los transistores bipolares, es que el paso de bloqueo a conduccion y viceversa no se hace instantaneamente, sino que siempre hay un retardo (ton , toff). Las causas fundamentales de estos retardos son las capacidades asociadas a las uniones colector - base y base - emisor y los tiempos de difusion y recombinacion de los portadores.\\
+
+\end{document}

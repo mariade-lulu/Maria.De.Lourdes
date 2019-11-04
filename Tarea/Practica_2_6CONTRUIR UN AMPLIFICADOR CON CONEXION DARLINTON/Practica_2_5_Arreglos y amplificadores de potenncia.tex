@@ -1,0 +1,109 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{cancel}
+
+\begin{document}
+\begin{center}
+\textbf{REPORTE PRACTICA}\\
+.\\
+ARREGLOS DE AMPLIFICADORES DE POTENCIA
+\end{center}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=13cm]{../upzmg.png} 
+\end{figure}
+
+\begin{center}
+Maria de Lourdes Gomez Islas\\
+.\\
+17-OCT-2019\\
+Universidad Politecnica de La Zona Metropolitana de Guadalajara
+\end{center}
+
+
+\newpage
+
+\part{INTRODUCCION}
+Una de las funcionalidades mas importantes de un transistor es la de amplificar senales. tambien podemos hacer cambios de bases electromecanicas , con estos cambios es posible hacer muchos tipos de senales como tambien negarlas\\
+Los reguladores de potencia mas sencillos son lineales. Existen dos tipos de circuitos integrados (CI) aptos para esta función: los amplificadores lineales y los reguladores de tension lineales.\\
+Los transistores bipolares de potencia se pueden emplear tanto en aplicaciones lineales como en conmutacion, aunque son más lentos y sensibles al fenomeno de la segunda ruptura, el cual es el resultado de una distribución no uniforme de la corriente en la union base-colector (polarizada inversamente durante conduccion) del transistor de salida, provocando un aumento de la temperatura en aquella zona que puede destruir el dispositivo; y que es distinto de la ruptura primaria por avalancha.
+
+\section{Circuitos}
+En orcad hicimos 4 circuitos donde pudimos observar la ganancia de cada amplificador, el \emph{SUMADOR}, \emph{RESTADOR}, \emph{NO INVERSOR} e \emph{INVERSOR}.
+Donde para sacar la ganancia del amplificador \textbf{inversor} era:\\
+ $$ \frac{RF}{R1} $$\\
+Y la formula para saber la ganancia de un amplificador \textbf{no inversor}:\\
+$$ \frac{RF}{R1} + 1 $$\\
+
+\newpage 
+\section{Simulacion en ORCAD}
+\begin{figure}[h]
+\centering
+\includegraphics[width=9cm]{../HTML/SUMADOR.png} 
+\caption{SUMADOR}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=9cm]{../HTML/RESTADOR.png} 
+\caption{RESTADOR}
+\end{figure}
+
+\newpage 
+
+\section{Simulacion en PSpice}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=9cm]{../HTML/SUMADOR2.png} 
+\caption{SUMADOR}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=9cm]{../HTML/RESTADOR2.png} 
+\caption{RESTADOR}
+\end{figure}
+
+\newpage 
+
+\section{CIRCUITOS ADC}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=7cm]{../HTML/CIRCUITOADC.png} 
+\caption{ADC}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=7cm]{../HTML/ADCFOCOS.png} 
+\caption{ADC-FOCOS}
+\end{figure}
+
+\newpage 
+
+\section{Tablas de verdad}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=4cm]{../HTML/tabladeverdad1.png}  
+\caption{Tabla de verdad SW}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=3.5cm]{../HTML/tabladeverdadfocos.png} 
+\caption{Tabla de verdad focos}
+\end{figure}
+
+\newpage 
+
+\section{conclusion}
+Para hacer las tablas de verdad era importante tomar como recomendacion el poner un voltaje de entrada segun la formula indicada en la practica, y variar el voltaje de salida para saber con cuanto coltaje se prenderia el foco y respecto al primer circuito era impotante tomar en cuenta el voltaje que daba en orden a la tabla de verdad, el cual nos dimos cuenta que el voltaje aumentaba.
+
+\end{document}
